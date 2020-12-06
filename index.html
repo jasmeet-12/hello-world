@@ -1,57 +1,107 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>resume</title>
-<meta name="viewport" content+"width=device-width,initial-scale=1.0">
-<link rel="stylesheet" href="resume.css">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
 <body>
-<div class="profile-img">
-<img src= "myphoto.jpg" alt="photo">
-</div>
-<div class="profile-information">
-<h1>Hardeep Kaur</h1>
-<p class="about">Subscribe Easy Tutorials Youtube channel to watch more videos on Web Designing ,Digital Marketing and Graphics Designing . press the bell icon to get immediate
-notification of new videos.</p>
-<div class="social-media">
-<img src="C:\Users\win10\Desktop\resume\174834-social-media-logos\png\036-facebook.png">
-<img src="C:\Users\win10\Desktop\resume\174834-social-media-logos\png\005-whatsapp.png">
-<img src="C:\Users\win10\Desktop\resume\174834-social-media-logos\png\029-instagram.png">
-</div>
-<h2>Expertise</h2>
-<div class="Expertise">
-<img src="web.jpg">
-<p><b>Web Designing</b></p>
-<small>
-     Subscribe Easy Tutorials Youtube channel to watch more videos on Web Designing ,Digital Marketing and Graphics Designing .
-</small>
-</div>
-<div class="Expertise">
-<img src="digital.jpg">
-<p><b>Digital-Marketing</b></p>
-<small>
-     Subscribe Easy Tutorials Youtube channel to watch more videos on Web Designing ,Digital Marketing and Graphics Designing .
-</small>
-</div>
-<div class="Expertise">
-<img src="graphic.png">
-<p><b>Graphic Designing</b></p>
-<small>
-     Subscribe Easy Tutorials Youtube channel to watch more videos on Web Designing ,Digital Marketing and Graphics Designing .
-</small>
-</div>
-<div>
-<h2>My Project Work<h2>
-<div class="projects">
-<img src="img1.jpg">
-<img src="img2.jpg">
-<img src="img3.jpg">
-<img src="img4.jpg" alt="xyz">
-<img src="img5.jpg">
-<img src="img6.jpg">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Girls</a></p>
+      <p><a href="#">Boys</a></p>
+      <p><a href="#">Children</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>NOOR CLOTHES COLLECTION</h1>
+      <p>We aren’t your average boutique. The collections we share with you are curated carefully ensuring quality, uniqueness and have passed our #berevelrous test with flying colors.  
+
+Our inventory does move fast and change quickly so if you fall in love you should buy it sooner rather than later. There is nothing proper going on here...consider yourself warned. 
+
+Being Revelrous means having fun, loving yourself, enjoying each day for what it brings and being real. There are no unrealistic expectations, no standards you have to keep up with, no judgements whatsoever, just merry-making. And a lot of it. 
+
+Life is to short to not be merry! </p>
+       <hr>
+      <h3>DISCOUNT 70%</h3>
+      <p>Scoring a good fashion deal is as exhilarating as winning the lottery (the latter hasn't happened yet, but humor us). The work that goes into hunting for the perfect designer discount piece is an art, and thankfully, there are more than enough retailers out there to help us on our journey. From The Outnet to Nordstrom Rack, here are the best discounted fashion websites (many have apps too!) to check out whether you're on the hunt for a deal or simply bored and want to peruse. Fingers crossed you strike gold..</p>
+    <br>
+<p>Celebrities like Kim Kardashian and influencers like Danielle Bernstein love What Goes Around Comes Around for its tight-knit curation of extremely one-of-a-kind finds. The retailer carries everything from luxury apparel to accessories, ensuring you get a variety</p></div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-</div>
-
+<footer class="container-fluid text-center">
+  <p>Sign Up With Facebook ID</p>
+</footer>
 
 </body>
 </html>
