@@ -1,2 +1,2 @@
 # hello-world
-my first gihub page repository
+my first github page repository
